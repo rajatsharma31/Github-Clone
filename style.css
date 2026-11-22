@@ -1,0 +1,109 @@
+/* ========== VARIABLES ========== */
+:root {
+  --bg: #ffffff;
+  --text: #1f2328;
+  --muted: #59636e;
+  --border: #d1d9e0;
+  --green: #1f883d;
+  --green-hover: #1a7f37;
+  --font: "Mona Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* ========== RESET / BASE ========== */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ========== BUTTONS ========== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 16px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn--green { background: var(--green); color: #fff; }
+.btn--green:hover { background: var(--green-hover); }
+.btn--outline { background: #fff; border-color: var(--border); color: var(--text); }
+.btn--outline:hover { background: #f6f8fa; }
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--border);
+}
+.navbar__left, .navbar__right { display: flex; align-items: center; gap: 16px; }
+.nav { display: flex; gap: 4px; }
+.nav a { padding: 8px 12px; font-size: 14px; font-weight: 500; border-radius: 6px; }
+.nav a:hover { background: #f6f8fa; }
+
+.search {
+  width: 220px;
+  padding: 6px 12px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+.link-signin { font-size: 14px; font-weight: 500; padding: 8px; }
+
+/* ========== HERO ========== */
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+  text-align: center;
+}
+
+.pill {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.pill:hover { background: #f6f8fa; }
+
+.hero h1 {
+  margin: 24px 0 32px;
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.hero__form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.hero__form input {
+  width: 260px;
+  padding: 10px 14px;
+  font: inherit;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .nav, .search { display: none; }
+  .navbar { padding: 12px 16px; }
+}
