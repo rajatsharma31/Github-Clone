@@ -148,7 +148,7 @@ small, .muted {
 
 /* ===== LAYOUT: side lines ===== */
 .wrap {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
@@ -257,15 +257,7 @@ small, .muted {
     z-index: 3;
 }
 
-.hero::before {
-    left: -5px;
-    background: linear-gradient(135deg, #3fb950 50%, #bc8cff 50%);
-}
 
-.hero::after {
-    right: -5px;
-    background: #2ea8a0;
-}
 .line{
   height: 100%;
   width: 5%;
@@ -396,4 +388,104 @@ small, .muted {
     right: 140px;
     bottom: 95px;
     background: #f72dd5;
+}
+
+.px6 {
+    right: 30px;
+    bottom: 135px;
+    background: #17b614;
+}
+.px7 {
+    right: 20px;
+    bottom: 145px;
+    background: #a37903;
+}
+.px8 {
+    left: 20px;
+    bottom: 145px;
+    background: #7e03a3;
+}
+.px9 {
+    left: 30px;
+    bottom: 135px;
+    background: #09949e;
+}
+.px9 {
+    left: 30px;
+    bottom: 135px;
+    background: #09949e;
+}
+.px10 {
+    left: 180px;
+    bottom: -540px;
+    background: #09949e;
+}
+.px11 {
+    left: 170px;
+    bottom: -530px;
+    background: #a7db2d;
+}
+.px12 {
+    left: 1070px;
+    bottom: -540px;
+    background: #8b0cd4;
+}
+.px13 {
+    left: 1080px;
+    bottom: -530px;
+    background: #a7db2d;
+}
+/* ===== DEMO + STATS ===== */
+.demo {
+    padding: 40px;
+}
+
+.demo__box {
+    height: 480px;
+    background: #000;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(90deg, #3fb950, #58a6ff) border-box;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stat {
+    padding: 20px 24px;
+    border-right: 1px solid var(--border);
+    font-size: 13px;
+}
+
+.stat:last-child {
+    border: 0;
+}
+
+.stat--big b {
+    display: block;
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 500;
+}
+.stat1, .stat2{
+  background-color: #F2F5F3;
+}
+.stat1:hover{
+  background-color:#e2e4e2a9;
+}
+.stat2:hover{
+  background-color:#e2e4e2a9;
+}
+.platform{
+    border-top: 1px solid var(--border);
+}
+.grid-bg {
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(148, 147, 147, 0.05) 1px, transparent 1px);
+    background-size: 10px 10px;
 }
